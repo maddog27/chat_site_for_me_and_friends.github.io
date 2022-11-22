@@ -1,15 +1,17 @@
-// We enclose this in window.onload.
-// So we don't have ridiculous errors.
-window.onload = function() {
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "",
-    authDomain: "",
-    projectId: "",
-    storageBucket: "",
-    messagingSenderId: "",
-    appId: ""
-  };
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCcaQaa0gQOmkCxNXQBm2ZweiOk-XGpGek",
+  authDomain: "memechatlol.firebaseapp.com",
+  projectId: "memechatlol",
+  storageBucket: "memechatlol.appspot.com",
+  messagingSenderId: "56513835365",
+  appId: "1:56513835365:web:6a3a9d411171ba2dcef18c",
+  measurementId: "G-C0M60CQV54"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   // This is very IMPORTANT!! We're going to use "db" a lot.
